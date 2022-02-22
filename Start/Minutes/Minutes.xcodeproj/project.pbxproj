@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9C5581E527BE850900A5F7ED /* MinutesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5581E427BE850900A5F7ED /* MinutesTests.swift */; };
+		9C576EA827BE907A009E426E /* AppCenterDistribute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C576EA327BE907A009E426E /* AppCenterDistribute.framework */; };
+		9C576EA927BE907A009E426E /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C576EA427BE907A009E426E /* AppCenterCrashes.framework */; };
+		9C576EAA27BE907A009E426E /* AppCenterDistributeResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C576EA527BE907A009E426E /* AppCenterDistributeResources.bundle */; };
+		9C576EAB27BE907A009E426E /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C576EA627BE907A009E426E /* AppCenter.framework */; };
+		9C576EAC27BE907A009E426E /* AppCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C576EA727BE907A009E426E /* AppCenterAnalytics.framework */; };
 		D3048F28202E2B2D00D45D7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3048F27202E2B2D00D45D7E /* AppDelegate.swift */; };
 		D3048F2D202E2B2D00D45D7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3048F2B202E2B2D00D45D7E /* Main.storyboard */; };
 		D3048F2F202E2B2D00D45D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3048F2E202E2B2D00D45D7E /* Assets.xcassets */; };
@@ -31,6 +36,11 @@
 /* Begin PBXFileReference section */
 		9C5581E227BE850900A5F7ED /* MinutesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinutesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5581E427BE850900A5F7ED /* MinutesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesTests.swift; sourceTree = "<group>"; };
+		9C576EA327BE907A009E426E /* AppCenterDistribute.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterDistribute.framework; sourceTree = "<group>"; };
+		9C576EA427BE907A009E426E /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterCrashes.framework; sourceTree = "<group>"; };
+		9C576EA527BE907A009E426E /* AppCenterDistributeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppCenterDistributeResources.bundle; sourceTree = "<group>"; };
+		9C576EA627BE907A009E426E /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenter.framework; sourceTree = "<group>"; };
+		9C576EA727BE907A009E426E /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterAnalytics.framework; sourceTree = "<group>"; };
 		D3048F24202E2B2D00D45D7E /* Minutes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minutes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3048F27202E2B2D00D45D7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3048F2C202E2B2D00D45D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C576EA827BE907A009E426E /* AppCenterDistribute.framework in Frameworks */,
+				9C576EAB27BE907A009E426E /* AppCenter.framework in Frameworks */,
+				9C576EAC27BE907A009E426E /* AppCenterAnalytics.framework in Frameworks */,
+				9C576EA927BE907A009E426E /* AppCenterCrashes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +81,18 @@
 				9C5581E427BE850900A5F7ED /* MinutesTests.swift */,
 			);
 			path = MinutesTests;
+			sourceTree = "<group>";
+		};
+		9C576EA227BE8FFB009E426E /* AppCenter */ = {
+			isa = PBXGroup;
+			children = (
+				9C576EA627BE907A009E426E /* AppCenter.framework */,
+				9C576EA727BE907A009E426E /* AppCenterAnalytics.framework */,
+				9C576EA427BE907A009E426E /* AppCenterCrashes.framework */,
+				9C576EA327BE907A009E426E /* AppCenterDistribute.framework */,
+				9C576EA527BE907A009E426E /* AppCenterDistributeResources.bundle */,
+			);
+			path = AppCenter;
 			sourceTree = "<group>";
 		};
 		D3048F1B202E2B2D00D45D7E = {
@@ -90,6 +116,7 @@
 		D3048F26202E2B2D00D45D7E /* Minutes */ = {
 			isa = PBXGroup;
 			children = (
+				9C576EA227BE8FFB009E426E /* AppCenter */,
 				D3048F27202E2B2D00D45D7E /* AppDelegate.swift */,
 				D3048F2B202E2B2D00D45D7E /* Main.storyboard */,
 				D3048F2E202E2B2D00D45D7E /* Assets.xcassets */,
@@ -196,6 +223,7 @@
 				D3048F32202E2B2D00D45D7E /* LaunchScreen.storyboard in Resources */,
 				D3048F2F202E2B2D00D45D7E /* Assets.xcassets in Resources */,
 				D3048F2D202E2B2D00D45D7E /* Main.storyboard in Resources */,
+				9C576EAA27BE907A009E426E /* AppCenterDistributeResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +444,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = B8MKEJ9N9F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Minutes/AppCenter",
+				);
 				INFOPLIST_FILE = Minutes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.Minutes;
@@ -431,6 +464,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8MKEJ9N9F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Minutes/AppCenter",
+				);
 				INFOPLIST_FILE = Minutes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.Minutes;
